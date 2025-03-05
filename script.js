@@ -122,6 +122,7 @@ dots.forEach((dot, index) => {
     });
 });
 
+// Newsletter start
 
   window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
   window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
@@ -143,6 +144,8 @@ dots.forEach((dot, index) => {
   };
 
   var AUTOHIDE = Boolean(0);
+//   Newsletter start
+
 
 // Plan See More
 function onChangeGold(){

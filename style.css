@@ -1432,7 +1432,7 @@ html {
     }
 }
 
-
+/* Newsletter start */
 /* Font Imports */
 @font-face {
     font-display: block;
@@ -1488,3 +1488,4 @@ html {
   #newsletter-btn:hover {
     transform: scale(1.1); /* Increase size by 10% */
 }
+/* Newsletter end */
