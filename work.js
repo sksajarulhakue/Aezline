@@ -24,23 +24,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Form Submission
-const contactForm = document.getElementById('contactForm');
-const newsletterForm = document.querySelector('.newsletter-form');
+// Newsletter starts
+window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+window.LOCALE = 'en';
+window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // Add your form submission logic here
-    alert('Thank you for your message! We will get back to you soon.');
-    contactForm.reset();
-});
+window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
 
-newsletterForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // Add your newsletter subscription logic here
-    alert('Thank you for subscribing to our newsletter!');
-    newsletterForm.reset();
-});
+window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
 
+
+
+
+window.translation = {
+  common: {
+    selectedList: '{quantity} list selected',
+    selectedLists: '{quantity} lists selected'
+  }
+};
+
+var AUTOHIDE = Boolean(0);
+// Newsletter End
 // Sticky Navbar
 const navbar = document.querySelector('.navbar');
 let lastScroll = 0;
