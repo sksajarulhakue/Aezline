@@ -16,15 +16,18 @@ body {
 .header {
     background-color: transparent; /* Fully transparent background */
     color: #fff;
-    padding: 1.3%;
-    margin-left: 2.9%;
-    margin-top: 0%;
-    position: fixed; /* Changed from relative to fixed */
-    width: calc(91% + 7px); /* Added to ensure full width */
+    padding: 1.3vh 3vw;
+    margin-left: auto;
+    margin-top: auto;
+    position: fixed; 
+    width: 94vw; 
+    max-width: 1200px;
     background-image: url('./images/header.png');
-    background-position: center top; /* First image centered at the top, second image at the bottom */
+    background-position: center top; 
     background-repeat: no-repeat; /* Ensures no repeat */
     top: 0; /* Added to stick to top */
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 10;
    
 }
