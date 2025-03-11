@@ -89,3 +89,35 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.portfolio-item, .about-content, .contact-form').forEach((element) => {
     observer.observe(element);
 });
+
+
+// email data send start
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // alert('message sent');
+
+    // Collect form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    // Send form data using EmailJS
+    emailjs.send('service_rvdcb3r', 'template_iv1ua3x', {
+        from_name: name,
+        to_name: 'Aezmall',
+        from_email: email,
+        subject: subject,
+        message: message,
+    }).then(function(response) {
+        console.log('Success!', response.status, response.text);
+        alert('Your message has been sent!');
+        document.getElementById('contactForm').reset();
+    }, function(error) {
+        console.log('Failed...', error);
+        alert('Sorry, something went wrong. Please try again.');
+    });
+});
+
+// email data send end

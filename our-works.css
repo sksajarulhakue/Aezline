@@ -292,7 +292,7 @@ h1, h2, h3, h4 {
 
 .form-group textarea {
     min-height: 120px;
-    resize: vertical;
+    resize: none;
 }
 
 #footer {
