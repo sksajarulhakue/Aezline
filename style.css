@@ -16,18 +16,22 @@ body {
 .header {
     background-color: transparent; /* Fully transparent background */
     color: #fff;
-    padding: 1.3vh 3vw;
-    margin-left: auto;
+    /* padding: 1.3vh 3vw; */
+    /* margin-left: auto; */
     margin-top: auto;
     position: fixed; 
-    width: 94vw; 
-    max-width: 1200px;
+    width: 100%; 
+    height: 4rem;
+    /* max-width: 1200px; */
     background-image: url('./images/header.png');
     background-position: center top; 
     background-repeat: no-repeat; /* Ensures no repeat */
     top: 0; /* Added to stick to top */
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translateX(-50%); */
     z-index: 10;
    
 }
@@ -37,9 +41,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: -25px auto;
-    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    /* max-width: 1200px; */
+    /* margin: -25px auto; */
+    /* padding: 0 20px; */
 }
 
 .logo {
